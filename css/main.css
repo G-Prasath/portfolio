@@ -1,20 +1,15 @@
-
-
-
-
 /* ============================================================================= 
 1. Fonts
 ============================================================================= */
 /* 7 stroke icons font by Pixeden */
-@import url('pe-icon-7-stroke.css'); 
+@import url("pe-icon-7-stroke.css");
 
 /* Font awesome icons font */
-@import url('font-awesome.css'); 
+@import url("font-awesome.css");
 
 /* Google fonts */
 @import url("./css");
 @import url("./css-1");
-
 
 /* ============================================================================= 
 2. General styles
@@ -24,16 +19,16 @@ html {
   height: 100%;
 }
 body {
-  font-family: 'PT Sans', Helvetica, sans-serif;
+  font-family: "PT Sans", Helvetica, sans-serif;
   color: #666;
   margin: 0;
   height: 100%;
   font-size: 100%;
-  line-height: 1.5em
+  line-height: 1.5em;
 }
 
 a {
-  color: #0099CC;
+  color: #0099cc;
   text-decoration: none;
   outline: none;
   -webkit-transition-duration: 0.3s;
@@ -42,12 +37,17 @@ a {
 
 a:hover {
   color: #006699;
-  color: #0099CC;
+  color: #0099cc;
   text-decoration: none;
   outline: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #222;
   font-family: Oswald, Helvetica, sans-serif;
   line-height: 1.5em;
@@ -85,11 +85,14 @@ img {
 }
 
 /* Buttons */
-input[type=submit], input[type=button], button, a.button {
+input[type="submit"],
+input[type="button"],
+button,
+a.button {
   display: inline-block;
   position: relative;
   padding: 0.8em 2em;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
   font-size: 0.875em;
   line-height: 1.2;
   border: 0;
@@ -99,13 +102,19 @@ input[type=submit], input[type=button], button, a.button {
   text-shadow: none;
   background: none;
   border-radius: 0;
-  font-family: 'PT Sans', Helvetica, sans-serif;
+  font-family: "PT Sans", Helvetica, sans-serif;
 }
 .btn {
   border-radius: 0;
 }
 
-input[type=submit]:hover, input[type=submit]:focus, input[type=button]:focus, button:hover, button:focus, a.button:hover, a.button:focus {
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+button:hover,
+button:focus,
+a.button:hover,
+a.button:focus {
   color: #fff;
   background-color: #ffcd38;
 }
@@ -140,10 +149,11 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=button]:focus, bu
   -moz-box-shadow: none;
   box-shadow: none;
   outline: none;
-  font-family: 'PT Sans', Helvetica, sans-serif;
+  font-family: "PT Sans", Helvetica, sans-serif;
 }
 
-textarea.form-control, textarea.form-control:focus {
+textarea.form-control,
+textarea.form-control:focus {
   height: auto;
 }
 
@@ -237,7 +247,9 @@ textarea.form-control, textarea.form-control:focus {
 /* ============================================================================= 
 3. Page loadig animation
 ============================================================================= */
-.no-js .preloader { display: none;  }
+.no-js .preloader {
+  display: none;
+}
 .preloader {
   position: fixed;
   left: 0px;
@@ -257,11 +269,12 @@ textarea.form-control, textarea.form-control:focus {
   height: 40px;
   position: absolute;
   text-align: center;
-  -webkit-animation: rotate 2.0s infinite linear;
-  animation: rotate 2.0s infinite linear;
+  -webkit-animation: rotate 2s infinite linear;
+  animation: rotate 2s infinite linear;
 }
 
-.dot1, .dot2 {
+.dot1,
+.dot2 {
   width: 60%;
   height: 60%;
   display: inline-block;
@@ -269,19 +282,19 @@ textarea.form-control, textarea.form-control:focus {
   top: 0;
   background-color: #ffcd38;
   border-radius: 100%;
-  -webkit-animation: bounce 2.0s infinite ease-in-out;
-  animation: bounce 2.0s infinite ease-in-out;
+  -webkit-animation: bounce 2s infinite ease-in-out;
+  animation: bounce 2s infinite ease-in-out;
 }
 
 .dot2 {
   top: auto;
   bottom: 0;
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
 }
 
 @-webkit-keyframes rotate {
-  100% { 
+  100% {
     -webkit-transform: rotate(360deg);
   }
 }
@@ -289,31 +302,31 @@ textarea.form-control, textarea.form-control:focus {
 @keyframes rotate {
   100% {
     transform: rotate(360deg);
-    -webkit-transform: rotate(360deg)
+    -webkit-transform: rotate(360deg);
   }
 }
 
 @-webkit-keyframes bounce {
   0%,
   100% {
-    -webkit-transform: scale(0.0);
+    -webkit-transform: scale(0);
   }
   50% {
-    -webkit-transform: scale(1.0);
+    -webkit-transform: scale(1);
   }
 }
 
 @keyframes bounce {
   0%,
-  100% { 
-    transform: scale(0.0);
-    -webkit-transform: scale(0.0);
-  } 50% { 
-    transform: scale(1.0);
-    -webkit-transform: scale(1.0);
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
   }
 }
-
 
 /* ============================================================================= 
 4. Subpages changer
@@ -479,7 +492,7 @@ textarea.form-control, textarea.form-control:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0,0,0,0.08)
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .site-title-block {
@@ -495,7 +508,7 @@ textarea.form-control, textarea.form-control:focus {
   font-weight: 500;
   line-height: 1.1em;
   margin: 15px 0 0 0;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 p.site-description {
@@ -504,7 +517,7 @@ p.site-description {
   font-weight: 300;
   font-family: Oswald, Helvetica, sans-serif;
   margin: 10px 0;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 /* Social links */
@@ -576,7 +589,6 @@ ul.social-links li:last-child a {
 
 /* ----- Header ----- */
 
-
 /* ============================================================================= 
 6. Site content
 ============================================================================= */
@@ -586,9 +598,9 @@ ul.social-links li:last-child a {
   position: relative;
   background-color: #fff;
   border-left: 5px solid #eee;
-  -webkit-box-shadow: -10px 0px 20px 0px rgba(0,0,0,0.04);
-  -moz-box-shadow: -10px 0px 20px 0px rgba(0,0,0,0.04);
-  box-shadow: -10px 0px 20px 0px rgba(0,0,0,0.04);
+  -webkit-box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, 0.04);
+  box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, 0.04);
 }
 
 /* Main menu */
@@ -630,7 +642,7 @@ ul.social-links li:last-child a {
   left: 0;
   right: 0;
   bottom: -3px;
-  content: '';
+  content: "";
   width: 21px;
   height: 2px;
   margin: 0 auto;
@@ -656,7 +668,7 @@ ul.social-links li:last-child a {
   color: #fff;
   line-height: 1.1em;
   font-weight: 500;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .section-title:after {
@@ -668,17 +680,17 @@ ul.social-links li:last-child a {
   left: -5px;
   content: "";
   border: 1px solid #ebbd34;
-  transform: skew(0deg,65deg);
-  -ms-transform: skew(0deg,65deg);
-  -webkit-transform: skew(0deg,65deg);
-  -o-transform: skew(0deg,65deg);
-  -moz-transform: skew(0deg,65deg);
+  transform: skew(0deg, 65deg);
+  -ms-transform: skew(0deg, 65deg);
+  -webkit-transform: skew(0deg, 65deg);
+  -o-transform: skew(0deg, 65deg);
+  -moz-transform: skew(0deg, 65deg);
   background: #ebbd34;
 }
 
 .section-description {
   display: inline-block;
-  margin:  0 0 0 15px;
+  margin: 0 0 0 15px;
   color: #888;
   font-size: 14px;
   font-weight: 200;
@@ -691,14 +703,13 @@ ul.social-links li:last-child a {
 }
 
 .block-title h3:after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 2px;
   margin-top: -1px;
   background-color: #ffcd38;
 }
-
 
 /* ============================================================================= 
 7. Subpages
@@ -708,8 +719,8 @@ ul.social-links li:last-child a {
 7.1. About Me subpage
 ======================================= */
 /* About me General info */
-.general-info {
-
+.general-info p {
+  text-align: justify !important;
 }
 /* /About me General info */
 
@@ -733,7 +744,7 @@ ul.social-links li:last-child a {
 }
 
 .info-list li .title:after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 2px;
@@ -741,7 +752,7 @@ ul.social-links li:last-child a {
 }
 
 .info-list li .value {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   min-width: 250px;
 }
 /* /About me list */
@@ -767,19 +778,23 @@ ul.social-links li:last-child a {
 /* Clients */
 .client_block {
   text-align: center;
+  overflow: hidden;
   padding: 5px 0;
-  opacity: 0.4;
+  /* opacity: 0.4; */
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
 
-.client_block:hover {
-  opacity: 1;
+.client_block:hover img {
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
 }
 
 .client_block img {
   max-width: 80px;
+  transition: transform 0.5s ease;
 }
+
 /* /Clients */
 
 /* Fun Facts */
@@ -791,9 +806,9 @@ ul.social-links li:last-child a {
   margin: 0;
   background: #fff;
   padding: 20px 10px 15px;
-  -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .fun-fact-block.gray-bg {
@@ -838,7 +853,7 @@ ul.social-links li:last-child a {
   color: #222;
   margin: 0;
   font-weight: 500;
-  text-align: center
+  text-align: center;
 }
 
 .testimonial-author-info {
@@ -880,16 +895,17 @@ ul.social-links li:last-child a {
   overflow: hidden;
   margin: 0;
   top: -40px;
+  left: 30px;
   border-radius: 40px;
   z-index: 1;
 }
 
 .testimonial-picture img {
-  width: 100%;
+  width: 80% !important;
   border-radius: 100%;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
-  border: 2px solid #ddd;
+  /* border: 2px solid #ddd; */
 }
 
 .testimonial-firm {
@@ -898,10 +914,9 @@ ul.social-links li:last-child a {
   margin: 0;
   text-transform: uppercase;
   font-style: italic;
-  font-weight: lighter
+  font-weight: lighter;
 }
 /* /Testimonials */
-
 
 /* =======================================
 7.2. Resume subpage
@@ -913,13 +928,13 @@ ul.social-links li:last-child a {
   padding-top: 6px;
   padding-bottom: 10px;
 }
-  
+
 .timeline-event {
   position: relative;
   padding-left: 25px;
   padding-bottom: 15px;
 }
-  
+
 .timeline-event:last-child {
   padding-bottom: 0px;
 }
@@ -927,7 +942,7 @@ ul.social-links li:last-child a {
 .timeline-event > * {
   display: block;
 }
-  
+
 .event-date {
   display: inline-block;
   position: relative;
@@ -948,11 +963,11 @@ ul.social-links li:last-child a {
   bottom: 3px;
   left: -3px;
   content: "";
-  transform: skew(0deg,65deg);
-  -ms-transform: skew(0deg,65deg);
-  -webkit-transform: skew(0deg,65deg);
-  -o-transform: skew(0deg,65deg);
-  -moz-transform: skew(0deg,65deg);
+  transform: skew(0deg, 65deg);
+  -ms-transform: skew(0deg, 65deg);
+  -webkit-transform: skew(0deg, 65deg);
+  -o-transform: skew(0deg, 65deg);
+  -moz-transform: skew(0deg, 65deg);
   background: #8cc44b;
 }
 
@@ -977,10 +992,10 @@ ul.social-links li:last-child a {
   margin-bottom: 30px;
 }
 
-.skills-info h4 { 
+.skills-info h4 {
   font-size: 0.875em;
   line-height: 1.1em;
-  position: relative; 
+  position: relative;
   margin: 0 0 5px;
 }
 
@@ -1052,7 +1067,6 @@ ul.social-links li:last-child a {
   width: 77%;
 }
 /* Skills */
-
 
 /* =======================================
 7.3. Portfolio subpage
@@ -1149,7 +1163,7 @@ ul.social-links li:last-child a {
 .portfolio-grid figure a div {
   position: absolute;
   background: #4f565e;
-  background: rgba(79,86,94,0.7);
+  background: rgba(79, 86, 94, 0.7);
   width: 100%;
   height: 100%;
   color: #888;
@@ -1159,11 +1173,11 @@ ul.social-links li:last-child a {
   font-size: 1rem;
   margin: 10px 0;
   color: #fff;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 .portfolio-grid figure a div h5:after {
   display: block;
-  content: '';
+  content: "";
   width: 100%;
   height: 2px;
   margin: 0 auto;
@@ -1174,7 +1188,7 @@ ul.social-links li:last-child a {
   position: absolute;
   bottom: 10px;
   left: 20px;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 .portfolio-grid figure a div i {
   color: #eee;
@@ -1182,19 +1196,25 @@ ul.social-links li:last-child a {
   bottom: 14px;
   right: 20px;
   margin: 0;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 .portfolio-grid figure a div span {
   display: block;
   padding: 10px 0;
   text-transform: uppercase;
   font-weight: normal;
-  color: rgba(255,255,255,0.9);
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-  border-bottom: 1px solid rgba(255,255,255,0.5);
-  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
-  -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
-  box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.1),
+    0 -10px 0 rgba(255, 255, 255, 0.3);
+  -moz-box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.1),
+    0 -10px 0 rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.1),
+    0 -10px 0 rgba(255, 255, 255, 0.3);
 }
 /* End of Direction-Aware Hover Effect */
 
@@ -1217,15 +1237,15 @@ ul.social-links li:last-child a {
   padding: 0;
   background: #fff;
   text-align: center;
-  -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .blog-card:hover {
-  -webkit-box-shadow: 0 1px 15px rgba(0,0,0,0.11);
-  -moz-box-shadow: 0 1px 15px rgba(0,0,0,0.11);
-  box-shadow: 0 1px 15px rgba(0,0,0,0.11);
+  -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.11);
 }
 
 .blog-card .post-image {
@@ -1277,9 +1297,9 @@ ul.social-links li:last-child a {
 .blog-card .media-block a .mask {
   position: absolute;
   background: #4f565e;
-  background: rgba(79,86,94,0.6);
+  background: rgba(79, 86, 94, 0.6);
   display: inline-block;
-  font-family: 'Pe-icon-7-stroke';
+  font-family: "Pe-icon-7-stroke";
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -1349,7 +1369,8 @@ ul.social-links li:last-child a {
   font-weight: 300;
 }
 
-.blog-card .post-meta .item, .post-meta .item a {
+.blog-card .post-meta .item,
+.post-meta .item a {
   color: #a6a6a6;
 }
 
@@ -1362,7 +1383,6 @@ ul.social-links li:last-child a {
 .post-meta .item:before {
   padding-right: 5px;
 }
-
 
 /* =======================================
 7.5. Contact subpage
@@ -1402,7 +1422,6 @@ ul.social-links li:last-child a {
   color: #888;
 }
 /* /Contact info */
-
 
 /* ============================================================================= 
 8. Sliders
@@ -1470,7 +1489,7 @@ ul.social-links li:last-child a {
   -webkit-tap-highlight-color: transparent;
 }
 
-.portfolio-page-carousel .owl-nav [class*='owl-'] {
+.portfolio-page-carousel .owl-nav [class*="owl-"] {
   color: #888;
   margin: 0;
   padding: 4px 7px;
@@ -1484,7 +1503,7 @@ ul.social-links li:last-child a {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio-page-carousel .owl-nav [class*='owl-']:before {
+.portfolio-page-carousel .owl-nav [class*="owl-"]:before {
   display: block;
   font-family: FontAwesome;
   font-size: 30px;
@@ -1531,7 +1550,8 @@ ul.social-links li:last-child a {
   display: inline-block;
 }
 
-.portfolio-page-carousel .owl-dots .owl-dot.active span, .portfolio-page-carousel .owl-dots .owl-dot:hover span {
+.portfolio-page-carousel .owl-dots .owl-dot.active span,
+.portfolio-page-carousel .owl-dots .owl-dot:hover span {
   background: #888;
 }
 
@@ -1548,12 +1568,11 @@ ul.social-links li:last-child a {
 }
 /* Portfolio Carousel */
 
-
 /* ============================================================================= 
 9. Portfolio Full info page
 ============================================================================= */
 .portfolio-page-content {
-  padding-bottom: 60px; 
+  padding-bottom: 60px;
 }
 .portfolio-nav {
   float: right;
@@ -1611,7 +1630,7 @@ ul.social-links li:last-child a {
 }
 
 .project-general-info li {
-  margin : 0 0 10px;
+  margin: 0 0 10px;
 }
 
 .project-general-info .fa {
@@ -1683,7 +1702,7 @@ ul.social-links li:last-child a {
   height: auto;
 }
 
-.blog-post-page  .page-wrapper {
+.blog-post-page .page-wrapper {
   position: relative;
 }
 
@@ -1698,21 +1717,21 @@ ul.social-links li:last-child a {
 }
 
 .blog-back-button:after {
-    display: block;
-    width: 5px;
-    height: 100%;
-    position: absolute;
-    bottom: 5px;
-    left: -5px;
-    content: "";
-    transform: skew(0deg,65deg);
-    -ms-transform: skew(0deg,65deg);
-    -webkit-transform: skew(0deg,65deg);
-    -o-transform: skew(0deg,65deg);
-    -moz-transform: skew(0deg,65deg);
-    background: #d9d9d9;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+  display: block;
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  bottom: 5px;
+  left: -5px;
+  content: "";
+  transform: skew(0deg, 65deg);
+  -ms-transform: skew(0deg, 65deg);
+  -webkit-transform: skew(0deg, 65deg);
+  -o-transform: skew(0deg, 65deg);
+  -moz-transform: skew(0deg, 65deg);
+  background: #d9d9d9;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 .blog-back-button:hover,
@@ -1805,7 +1824,6 @@ blockquote {
   color: #888;
   font-size: 12px;
 }
-
 
 /* ============================================================================= 
 11. Media Queries 
@@ -1932,7 +1950,6 @@ blockquote {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-
   }
 
   .pt-page {
@@ -1950,9 +1967,9 @@ blockquote {
     z-index: 99;
     background-color: #fff;
     overflow: auto;
-    -webkit-box-shadow: -10px 0px 20px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: -10px 0px 20px 0px rgba(0,0,0,0.1);
-    box-shadow: -10px 0px 20px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.66s ease-in-out;
     -moz-transition: all 0.66s ease-in-out;
     -o-transition: all 0.66s ease-in-out;
