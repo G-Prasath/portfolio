@@ -89,25 +89,27 @@
               <a class="pt-trigger" href="#portfolio" data-animation="60" data-goto="3">Portfolio</a>
             </li>
             <li>
-              <a class="pt-trigger" href="#blog" data-animation="61" data-goto="4">Blog</a>
-            </li>
-            <li>
               <a class="pt-trigger" href="#contact" data-animation="58" data-goto="5">Contact</a>
             </li>
           </ul>
           <!-- /Main menu -->
 
+
           <!-- Social buttons -->
           <ul class="social-links">
-            <li><a class="tip social-button" href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="tip social-button" href="https://github.com/G-Prasath" target="_blank" title="github"><i class="fa fa-github"></i></a></li>
             <!-- Full list of social icons: http://fontawesome.io/icons/#brand -->
-            <li><a class="tip social-button" href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="tip social-button" href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+            <li><a class="tip social-button" href="https://www.linkedin.com/in/prasath264" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <li>
+
+            </li>
             <!--<li><a class="tip social-button" href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>-->
             <!--<li><a class="tip social-button" href="#" title="last.fm"><i class="fa fa-lastfm"></i></a></li>-->
             <!--<li><a class="tip social-button" href="#" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>-->
           </ul>
           <!-- /Social buttons -->
+
+
         </div>
         <!-- Navigation & Social buttons -->
 
@@ -415,7 +417,8 @@
                     <h5 class="event-date">2025</h5>
                     <h4 class="event-name">CCNA</h4>
                     <span class="event-description">Chennai</span>
-                    <p>Completed CCNA training covering networking fundamentals, routing, switching, and network security.</p>
+                    <p>Completed CCNA training covering networking fundamentals, routing, switching, and network
+                      security.</p>
                   </div>
 
                   <!-- Single event -->
@@ -495,17 +498,17 @@
 
                   <h4>Express JS</h4>
                   <div class="skill-container">
-                    <div class="skill-percentage skill-3"></div>
+                    <div class="skill-percentage skill-7"></div>
                   </div>
 
                   <h4>Node JS</h4>
                   <div class="skill-container">
-                    <div class="skill-percentage skill-3"></div>
+                    <div class="skill-percentage skill-8"></div>
                   </div>
 
                   <h4>Tailwind CSS</h4>
                   <div class="skill-container">
-                    <div class="skill-percentage skill-3"></div>
+                    <div class="skill-percentage skill-6"></div>
                   </div>
                 </div>
 
@@ -531,7 +534,7 @@
 
                   <h4>Core Java</h4>
                   <div class="skill-container">
-                    <div class="skill-percentage skill-8"></div>
+                    <div class="skill-percentage skill-3"></div>
                   </div>
 
                   <h4>MySQL</h4>
@@ -541,18 +544,57 @@
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-sm-12 col-md-12">
-                <div class="download-cv-block">
-                  <a class="button" target="_blank" href="#">Download CV</a>
-                </div>
-              </div>
-            </div>
           </section>
           <!-- End Resume Subpage -->
 
 
           <!-- Portfolio Subpage -->
+
+          <?php
+          $projects = [
+            [
+              "name" => "Mekark",
+              "img" => "project-1.png",
+              "link" => "https://www.mekark.com"
+            ],
+            [
+              "name" => "Interworld Line",
+              "img" => "project-2.png",
+              "link" => "https://www.interworldline.com/"
+            ],
+            [
+              "name" => "Almericus",
+              "img" => "project-3.png",
+              "link" => "https://almericus.in/"
+            ],
+            [
+              "name" => "Selvalakshmi Foundation",
+              "img" => "project-4.png",
+              "link" => "https://selvalakshmifoundation.org/"
+            ],
+            [
+              "name" => "Revovest",
+              "img" => "project-5.png",
+              "link" => "https://www.revovest.in/"
+            ],
+            [
+              "name" => "Pay Slip Automation",
+              "img" => "project-6.png",
+              "link" => "https://github.com/G-Prasath/paySlip.git"
+            ],
+            [
+              "name" => "Rosinimudra",
+              "img" => "project-7.png",
+              "link" => "https://rosinimudra.com/"
+            ],
+            [
+              "name" => "POS (Point of Sale)",
+              "img" => "project-8.png",
+              "link" => "https://pos-billing-software.vercel.app/"
+            ]
+
+          ];
+          ?>
           <section class="pt-page pt-page-3" data-id="portfolio">
             <div class="section-title-block">
               <h2 class="section-title">Portfolio</h2>
@@ -567,7 +609,7 @@
                 <li class="active">
                   <a class="filter btn btn-sm btn-link active" data-group="all">All</a>
                 </li>
-                <li>
+                <!-- <li>
                   <a class="filter btn btn-sm btn-link" data-group="media">Media</a>
                 </li>
                 <li>
@@ -575,7 +617,7 @@
                 </li>
                 <li>
                   <a class="filter btn btn-sm btn-link" data-group="video">Video</a>
-                </li>
+                </li> -->
               </ul>
               <!-- End of Portfolio filter -->
 
@@ -583,163 +625,39 @@
               <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
 
                 <!-- Portfolio Item 1 -->
-                <figure class="item" data-groups='["all", "media"]'>
-                  <a class="ajax-page-load" href="portfolio-1.html">
-                    <img src="images/portfolio/1.jpg" alt="">
-                    <div>
-                      <h5 class="name">Project Name</h5>
-                      <small>Media</small>
-                      <i class="fa fa-file-text-o"></i>
-                    </div>
-                  </a>
-                </figure>
+                <?php foreach ($projects as $index => $project): ?>
+
+                  <!-- Portfolio Item -->
+                  <figure class="item" data-groups='["all"]'>
+                    <a href="<?= $project['link']; ?>" target="_blank">
+                      <img src="images/portfolio/<?= $project['img']; ?>" alt="">
+                      <div>
+                        <h5 class="name">
+                          <?= $project['name']; ?>
+                        </h5>
+                        <small style="
+background:#fff;
+color:#000;
+padding:6px;
+border-radius:50%;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:24px;
+height:24px;
+font-weight:600;
+">
+                          <?= $index + 1 ?>
+                        </small>
+                        <i class="fa fa-external-link"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item -->
+
+                <?php endforeach; ?>
                 <!-- /Portfolio Item 1 -->
 
-                <!-- Portfolio Item 2 -->
-                <figure class="item" data-groups='["all", "video"]'>
-                  <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Praesent Dolor Ex"
-                    class="lightbox mfp-iframe">
-                    <img src="images/portfolio/2.jpg" alt="">
-                    <div>
-                      <h5 class="name">Project Name</h5>
-                      <small>Video</small>
-                      <i class="fa fa-video-camera"></i>
-                    </div>
-                  </a>
-                </figure>
-                <!-- /Portfolio Item 2 -->
-
-                <!-- Portfolio Item 3 -->
-                <figure class="item" data-groups='["all","illustration"]'>
-                  <a href="images/portfolio/3.jpg" class="lightbox" title="Duis Eu Eros Viverra">
-                    <img src="images/portfolio/3.jpg" alt="">
-                    <div>
-                      <h5 class="name">Project Name</h5>
-                      <small>Illustration</small>
-                      <i class="fa fa-image"></i>
-                    </div>
-                  </a>
-                </figure>
-                <!-- /Portfolio Item 3 -->
-
-                <!-- Portfolio Item 4 -->
-                <figure class="item" data-groups='["all", "media"]'>
-                  <a class="ajax-page-load" href="portfolio-1.html">
-                    <img src="images/portfolio/4.jpg" alt="">
-                    <div>
-                      <h5 class="name">Project Name</h5>
-                      <small>Media</small>
-                      <i class="fa fa-file-text-o"></i>
-                    </div>
-                  </a>
-                </figure>
-                <!-- /Portfolio Item 4 -->
-
-                <!-- Portfolio Item 5 -->
-                <figure class="item" data-groups='["all", "illustration"]'>
-                  <a href="images/portfolio/5.jpg" class="lightbox" title="Aliquam Condimentum Magna Rhoncus">
-                    <img src="images/portfolio/5.jpg" alt="">
-                    <div>
-                      <h5 class="name">Project Name</h5>
-                      <small>Illustration</small>
-                      <i class="fa fa-image"></i>
-                    </div>
-                  </a>
-                </figure>
-                <!-- /Portfolio Item 5 -->
-
-                <!-- Portfolio Item 6 -->
-                <figure class="item" data-groups='["all", "media"]'>
-                  <a class="ajax-page-load" href="portfolio-1.html">
-                    <img src="images/portfolio/6.jpg" alt="">
-                    <div>
-                      <h5 class="name">Project Name</h5>
-                      <small>Media</small>
-                      <i class="fa fa-file-text-o"></i>
-                    </div>
-                  </a>
-                </figure>
-                <!-- /Portfolio Item 6 -->
-
-                <!-- Portfolio Item 7 -->
-                <figure class="item" data-groups='["all", "video"]'>
-                  <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Nulla Facilisi"
-                    class="lightbox mfp-iframe">
-                    <img src="images/portfolio/7.jpg" alt="">
-                    <div>
-                      <h5 class="name">Project Name</h5>
-                      <small>Video</small>
-                      <i class="fa fa-video-camera"></i>
-                    </div>
-                  </a>
-                </figure>
-                <!-- /Portfolio Item 7 -->
-
-                <!-- Portfolio Item 8 -->
-                <figure class="item" data-groups='["all",  "media"]'>
-                  <a class="ajax-page-load" href="portfolio-1.html">
-                    <img src="images/portfolio/8.jpg" alt="">
-                    <div>
-                      <h5 class="name">Project Name</h5>
-                      <small>Media</small>
-                      <i class="fa fa-file-text-o"></i>
-                    </div>
-                  </a>
-                </figure>
-                <!-- /Portfolio Item 8 -->
-
-                <!-- Portfolio Item 9 -->
-                <figure class="item" data-groups='["all","illustration"]'>
-                  <a href="images/portfolio/9.jpg" class="lightbox" title="Mauris Neque Dolor">
-                    <img src="images/portfolio/9.jpg" alt="">
-                    <div>
-                      <h5 class="name">Project Name</h5>
-                      <small>Illustration</small>
-                      <i class="fa fa-image"></i>
-                    </div>
-                  </a>
-                </figure>
-                <!-- /Portfolio Item 9 -->
-
-                <!-- Portfolio Item 10 -->
-                <figure class="item" data-groups='["all", "video"]'>
-                  <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Donec Lectus Arcu"
-                    class="lightbox mfp-iframe">
-                    <img src="images/portfolio/10.jpg" alt="">
-                    <div>
-                      <h5 class="name">Project Name</h5>
-                      <small>Video</small>
-                      <i class="fa fa-video-camera"></i>
-                    </div>
-                  </a>
-                </figure>
-                <!-- /Portfolio Item 10 -->
-
-                <!-- Portfolio Item 11 -->
-                <figure class="item" data-groups='["all","illustration"]'>
-                  <a href="images/portfolio/11.jpg" class="lightbox" title="Duis Eu Eros Viverra">
-                    <img src="images/portfolio/11.jpg" alt="">
-                    <div>
-                      <h5 class="name">Project Name</h5>
-                      <small>Illustration</small>
-                      <i class="fa fa-image"></i>
-                    </div>
-                  </a>
-                </figure>
-                <!-- /Portfolio Item 11 -->
-
-                <!-- Portfolio Item 12 -->
-                <figure class="item" data-groups='["all","media"]'>
-                  <a class="ajax-page-load" href="portfolio-1.html">
-                    <img src="images/portfolio/12.jpg" alt="">
-                    <div>
-                      <h5 class="name">Project Name</h5>
-                      <small>Media</small>
-                      <i class="fa fa-file-text-o"></i>
-                    </div>
-                  </a>
-                </figure>
-                <!-- /Portfolio Item 12 -->
               </div>
               <!-- /Portfolio Grid -->
 
@@ -955,14 +873,13 @@
                 <div class="block-title">
                   <h3>Get in Touch</h3>
                 </div>
-                <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum
-                  egestas. Integer ultrices libero sed justo vehicula, eget tincidunt tortor tempus.</p>
+                <p>Ready to start your next project? Get in touch to discuss your ideas, requirements, or collaboration opportunities. I’m here to help build reliable and modern solutions.</p>
                 <div class="contact-info-block">
                   <div class="ci-icon">
                     <i class="pe-7s-icon pe-7s-map-marker"></i>
                   </div>
                   <div class="ci-text">
-                    <h5>Los Angeles, USA</h5>
+                    <h5>Mayiladuthurai</h5>
                   </div>
                 </div>
                 <div class="contact-info-block">
@@ -970,17 +887,17 @@
                     <i class="pe-7s-icon pe-7s-mail"></i>
                   </div>
                   <div class="ci-text">
-                    <h5>alexsmith@example.com</h5>
+                    <h5><a href="mailto:guruprasathmsc@gmail.com" style="text-decoration: none; color: #000;">guruprasathmsc@gmail.com</a></h5>
                   </div>
                 </div>
-                <div class="contact-info-block">
+                <!-- <div class="contact-info-block">
                   <div class="ci-icon">
                     <i class="pe-7s-icon pe-7s-call"></i>
                   </div>
                   <div class="ci-text">
                     <h5>+123 654 78900</h5>
                   </div>
-                </div>
+                </div> -->
                 <div class="contact-info-block">
                   <div class="ci-icon">
                     <i class="pe-7s-icon pe-7s-check"></i>
